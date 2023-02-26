@@ -1,0 +1,23 @@
+@media (max-width: 828px) {
+    .container {
+        grid-template-rows: 1% 10% 5% 5% 10% auto;
+        grid-template-areas:
+        'theme . .'
+        '. header .'
+        '. actionBar .'
+        '. actionBar .'
+        '. techGrid .'
+    }
+    #techGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 684px) {
+    .container {
+        grid-template-rows: 1% 5% 5% 5% 10% auto;
+    }
+    header {
+        font-size: 15px;
+    }
+}

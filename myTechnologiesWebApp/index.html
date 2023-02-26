@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My technologies</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/darkMode.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="theme">
+      <!--<button >Dark</button>-->
+      <a href="#" id="btnTheme" onclick="changeTheme()"><i id="btnThemePic" class="fa-solid fa-moon"></i></a>
+    </div>
+    <header>
+      <h1>My technologies</h1>
+    </header>
+    
+    <div class="actionBar">
+      <input type="text" id="inputText" placeholder="Enter new technology...">
+      <button id="btnAdd" onclick="addItem()">Add</button>
+      <button id="btnRemoveAll" onclick="removeAll()">Remove all items</button>
+    </div>
+    <div id="techGrid"></div>
+  </div>
+  <script src="scripts/default.js"></script>
+  <script src="scripts/theme.js"></script>
+</body>
+</html>
